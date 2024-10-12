@@ -18,7 +18,7 @@ const posts = [
       { type: 'paragraph', content: '🎓 Analysis and Systems Development student at Católica SC 🎓' },
       { type: 'paragraph', content: '💻 Learning Full-stack Javascript development at B7Web 💻' },
       { type: 'paragraph', content: '💼 Software Development Intern at SZ Soluções 💼' },
-      { type: 'link', content: 'jane.design/doctorcare' },
+      { type: 'link', content: 'https://www.linkedin.com/in/raphael-alexsandro-25331a237' },
     ],
     publishedAt: new Date('2024-10-12 18:00:00'),
   },
@@ -34,7 +34,7 @@ const posts = [
       { type: 'paragraph', content: 'Desenvolvedor Web Full Stack curioso e apaixonado por programação. Meu primeiro contato com a programação foi na faculdade que eu fiz Redes de Computadores no IFC, e uma das matérias foi Desenvolvimento Web. Atraído pela Tecnologia, estudei por fora também, em um site chamado DIO. Lá fiz alguns cursos básicos, e posteriormente ingressei na Trybe, uma escola de Tecnologia.' },
       { type: 'link', content: 'https://www.linkedin.com/in/danilobertolini/' },
     ],
-    publishedAt: new Date('2022-05-03 19:00:00'),
+    publishedAt: new Date('2024-10-11 19:00:00'),
   }
 ]
 
