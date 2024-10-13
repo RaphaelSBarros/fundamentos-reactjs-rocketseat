@@ -1,7 +1,7 @@
-import { PencilLine } from 'phosphor-react'
+import { PencilLine } from "phosphor-react";
 
-import styles from './Sidebar.module.css'
-import { Avatar } from './Avatar'
+import styles from "./Sidebar.module.css";
+import { Avatar } from "./Avatar";
 
 export function Sidebar() {
   return (
@@ -23,5 +23,5 @@ export function Sidebar() {
         </a>
       </footer>
     </aside>
-  )
+  );
 }
