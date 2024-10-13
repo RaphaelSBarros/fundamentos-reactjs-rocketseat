@@ -10,7 +10,7 @@
 
 .content {
   line-height: 1.6;
-  color: var(----gray-300);
+  color: var(--gray-300);
   margin-top: 1.5rem;
 }
 
@@ -29,14 +29,14 @@
 }
 
 .post > header {
- display: flex;
- align-items: center;
- justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .post > header time {
   font-size: 0.875rem;
-  color: var(----gray-400);
+  color: var(--gray-400);
 }
 
 .author {
@@ -47,14 +47,14 @@
 
 .authorInfo strong {
   display: block;
-  color: var(----gray-100);
+  color: var(--gray-100);
   line-height: 1.6;
 }
 
 .authorInfo span {
   display: block;
   font-size: 0.875rem;
-  color: var(----gray-400);
+  color: var(--gray-400);
   line-height: 1.6;
 }
 
@@ -63,16 +63,6 @@
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--gray-600);
-}
-
-.commentForm footer {
-  visibility: hidden;
-  max-height: 0;
-}
-
-.commentForm:focus-within footer {
-  visibility: visible;
-  max-height: none;
 }
 
 .commentForm > strong {
@@ -87,13 +77,23 @@
   resize: none;
   height: 6rem;
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: 0.25rem;
   color: var(--gray-100);
   line-height: 1.4;
   margin-top: 1rem;
 }
 
-.commentForm button[type='submit'] {
+.commentForm footer {
+  visibility: hidden;
+  max-height: 0;
+}
+
+.commentForm:focus-within footer {
+  visibility: visible;
+  max-height: none;
+}
+
+.commentForm button[type="submit"] {
   padding: 1rem 1.5rem;
   margin-top: 1rem;
   border-radius: 8px;
@@ -102,11 +102,17 @@
   color: var(--white);
   font-weight: bold;
   cursor: pointer;
+
   transition: background-color 0.1s;
 }
 
-.commentForm button[type='submit']:hover {
+.commentForm button[type="submit"]:not(:disabled):hover {
   background: var(--green-300);
+}
+
+.commentForm button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
 
 .commentList {
